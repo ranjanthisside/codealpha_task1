@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image Gallery</title>
+    <link rel="icon" type="image/x-icon" href="image-solid-full.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d5ae0d151d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <!-- <img src="logo white.ico" alt="Logo" class="navbar-logo"> -->
+            <span class="navbar-title">Prabhakar Ranjan</span>
+        </div>
+        <div class="navbar-right">
+            <button class="details-btn" id="openSidebar">View Project Details</button>
+        </div>
+    </nav>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <button class="close-btn" id="closeSidebar">&times;</button>
+            <h2> <u> Project Details</u></h2>
+            <ul>
+                <li><strong>Project Name:</strong> Image Gallery </li>
+                <li><strong>Assigned Date:</strong> 21 August 2025</li>
+                <li><strong>Completion Date:</strong> 20 Sept. 2025</li>
+                <li><strong>Done By:</strong> Prabhakar Ranjan</li>
+                <li><strong>Purpose:</strong> For Code Alpha Internship</li>
+                <li><strong>Category:</strong> Image Gallery  | Web Application</li>
+                <li><strong>Description:</strong> This project is a simple, responsive Image Gallery built with HTML, CSS, and JavaScript. This shows the full sized images, and have navigation buttons. This project was a part of assignment on my Internship at Code Alpha.</li>
+            </ul>
+        </div>
+    </aside>
+    <div class="gallery-container">
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="college">Colleges</button>
+            <button class="filter-btn" data-filter="city">City</button>
+            <button class="filter-btn" data-filter="animals">Animals</button>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="college">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpdnVrRuVj1PGkb1b_hXlXDPICH8AbH5k8-Q&s" alt="College 1">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://cdn.enjoytravel.com/img/Big7Enjoy/au/travel-news/places-to-visit/50-most-visited-cities-in-the-world/R8OW3RaRJcRkqsi0lH2wvVqXoRNcs3RNVoFwgkNa.webp" alt="City 1">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://cdn.pixabay.com/photo/2020/03/10/04/48/animal-4917802_1280.jpg" alt="Animal 1">
+            </div>
+            <div class="gallery-item" data-category="college">
+                <img src="https://images.careerindia.com/img/2018/07/1-1530939791.jpg" alt="College 2">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://www.planetware.com/wpimages/2020/03/world-most-visited-cities-london-england.jpg" alt="City 2">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW5pbWFsfGVufDB8fDB8fHww" alt="Animal 2">
+            </div>
+            <div class="gallery-item" data-category="college">
+                <img src="https://www.vedantu.com/seo/content-images/3906688b-05d3-4ca6-91d8-3e94a36acf99.jpg" alt="College 3">
+            </div>
+            <div class="gallery-item" data-category="college">
+                <img src="https://www.easemytrip.com/travel/img/birla.jpg" alt="College 4">
+            </div>
+            <div class="gallery-item" data-category="college">
+                <img src="https://image.cnbcfm.com/api/v1/image/104790550-Radcliffe_Camera.jpg?v=1582201092&w=1920&h=1080" alt="College 5">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://www.easemytrip.com/travel/img/paris-frn.jpg" alt="City 3">
+            </div>
+            <div class="gallery-item" data-category="college">
+                <img src="https://www.careers360.com/webstories/top-7-engineering-colleges-in-maharashtra/assets/3.webp" alt="College 6">
+            </div>
+            <div class="gallery-item" data-category="college">
+                <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202407/iit-roorkee-113914689-16x9_0.jpg?VersionId=4ehn5AYHeGMwihlgGtp_tSDOOzAT4Dyg&size=690:388" alt="College 7">
+            </div>
+            <div class="gallery-item" data-category="college">
+                <img src="https://www.easemytrip.com/travel/img/guwhati.jpg" alt="College 8">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://www.transindiaholidays.com/Content/images/packages/city-Jaipur.jpg" alt="City 4">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://i.ytimg.com/vi/BLsj76owz68/maxresdefault.jpg" alt="City 5">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/2021/07/iStock-495798786-1-e1535108453823.jpg" alt="City 6">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://media.wired.com/photos/593261cab8eb31692072f129/3:2/w_2560%2Cc_limit/85120553.jpg" alt="Animal 3">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://hectindiai.s3.amazonaws.com/0000/6/2025/02/07/paris-france-europe-1.webp" alt="City 7">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://blog.dookinternational.com/images/post-media/LfuRb1719393044.png" alt="City 8">
+            </div>
+            <div class="gallery-item" data-category="city">
+                <img src="https://www.holidify.com/images/cmsuploads/compressed/Jaipur_20200503234720.jpg" alt="City 9">
+            </div>
+            
+            <div class="gallery-item" data-category="animals">
+                <img src="https://cdn.britannica.com/94/494-050-A674AD3A/Fallow-deer-dama-dama.jpg" alt="Animal 4">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://www.worldanimalprotection.org/cdn-cgi/image/width=1920,format=auto/globalassets/images/elephants/1033551-elephant.jpg" alt="Animal 5">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREDPp1-pC4zFRX8GlRdQBv2dJhbsohFlHMgA&s" alt="Animal 6">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://d1jyxxz9imt9yb.cloudfront.net/medialib/4350/image/s768x1300/AdobeStock_123823873_433578_reduced.jpg" alt="Animal 7">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://d1jyxxz9imt9yb.cloudfront.net/article/9784/meta_image/regular/AdobeStock_175375173_422894_reduced.jpg" alt="Animal 8">
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWIE9vIClxqAVC5K57z1YbkiHetnaGkdclMg&s" alt="Animal 9">
+            </div>
+        </div>
+    </div>
+    <!-- full size view -->
+    <div class="lightbox" id="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="">
+        <button class="lightbox-prev">&#10094;</button>
+        <button class="lightbox-next">&#10095;</button>
+        <div class="lightbox-controls" aria-hidden="false">
+            <i id="zoomIn" title="Zoom in" class="fa-solid fa-magnifying-glass-plus"></i>
+            <div id="zoomReset" title="Reset zoom"> <b> RESET </b></div>
+            <i id="zoomOut" title="Zoom out"class="fa-solid fa-magnifying-glass-minus"></i>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
