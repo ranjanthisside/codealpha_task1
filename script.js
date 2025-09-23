@@ -144,13 +144,22 @@ if(zoomResetBtn) zoomResetBtn.addEventListener('click', resetZoom);
 const addImgButton = document.getElementById('addImgButton');
 const imgUrlInput = document.getElementById('imgUrlInput');
 const galleryGrid = document.querySelector('.gallery-grid');
-
+const imgCategoryInput = document.getElementById('imgCategory');
+   
 
 addImgButton.addEventListener('click', () => {
     const url = imgUrlInput.value;
+    if (!url) {
+        alert('Please enter an image URL');
+        return;
+    }
+    if(!imgCategoryInput.value){
+        alert("Enter the category");
+        return;
+    }else{
         const div = document.createElement('div');
         div.className = 'gallery-item';
-        div.setAttribute('data-category', 'others');
+        div.setAttribute('data-category', imgCategoryInput.value.trim().toLowerCase());
         const img = document.createElement('img');
         img.src = url;
         img.alt = 'User added image';
@@ -163,4 +172,19 @@ addImgButton.addEventListener('click', () => {
             openLightbox(visibleIdx);
         });
         imgUrlInput.value = '';
+        
+        //adding category if new category is added
+        //code pending to write
+    }
+        
+});
+
+//add category functionality
+imgCategoryInput.addEventListener('input', () => {
+    const category = imgCategoryInput.value.trim().toLowerCase();
+    if (category) {
+        addImgButton.setAttribute('data-category', category);
+    } else {
+        addImgButton.removeAttribute('data-category', alert("Enter the category") );
+    }
 });
